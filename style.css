@@ -1,0 +1,1044 @@
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Manrope',sans-serif;
+    background:#F8F6F1;
+    color:#3F3A35;
+    overflow-x:hidden;
+    line-height:1.7;
+}
+
+img{
+    display:block;
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    font-family:'Manrope',sans-serif;
+    cursor:pointer;
+    border:none;
+}
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.container{
+    width:min(92%,1100px);
+    margin:0 auto;
+}
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+section{
+    position:relative;
+}
+
+.fade-section{
+    padding:90px 0;
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-image{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    animation:heroZoom 18s ease-in-out infinite alternate;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.72) 0%,
+            rgba(0,0,0,.28) 45%,
+            rgba(0,0,0,.08) 100%
+        );
+}
+
+.hero-content{
+
+    position:absolute;
+    inset:0;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    text-align:center;
+
+    padding:
+        0
+        24px
+        80px;
+
+    z-index:10;
+}
+
+.hero-text{
+
+    max-width:520px;
+    margin:0 auto;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:64px;
+    font-weight:500;
+
+    color:#fff;
+
+    margin-bottom:14px;
+
+    letter-spacing:1px;
+
+}
+
+.hero-date{
+
+    color:#fff;
+
+    font-size:24px;
+
+    margin-bottom:42px;
+
+    letter-spacing:4px;
+
+}
+
+.hero-button{
+
+    width:280px;
+
+    max-width:100%;
+
+    margin:0 auto;
+
+    padding:17px;
+
+    border-radius:50px;
+
+    background:#F8F6F1;
+
+    color:#4A443E;
+
+    font-size:17px;
+
+    transition:.35s;
+
+    box-shadow:
+
+        0 10px 35px rgba(0,0,0,.18);
+
+}
+
+.hero-button:hover{
+
+    transform:translateY(-3px);
+
+    background:white;
+
+}
+
+/* =====================================
+   INVITATION
+===================================== */
+
+.invitation{
+
+    background:#F8F6F1;
+
+}
+
+.invitation h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:54px;
+
+    font-weight:500;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.invitation-text{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:#4D4742;
+
+    line-height:2;
+
+}
+
+.content-photo{
+
+    width:min(520px,100%);
+
+    margin:70px auto 0;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.12);
+
+}
+
+/* =====================================
+   COUNTDOWN
+===================================== */
+
+.countdown-section{
+
+    background:white;
+
+}
+
+.section-title{
+
+    display:block;
+
+    text-align:center;
+
+    font-size:22px;
+
+    color:#8C847C;
+
+    margin-bottom:12px;
+
+    letter-spacing:3px;
+
+}
+
+.date-title{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:64px;
+
+    font-weight:500;
+
+    margin-bottom:14px;
+
+}
+
+.time-title{
+
+    text-align:center;
+
+    font-size:28px;
+
+    margin-bottom:55px;
+
+}
+
+.countdown-title{
+
+    text-align:center;
+
+    font-size:26px;
+
+    margin-bottom:42px;
+
+}
+
+.countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.count-item{
+
+    min-width:110px;
+
+    text-align:center;
+
+}
+
+.count-item span{
+
+    display:block;
+
+    font-size:64px;
+
+    font-weight:300;
+
+    line-height:1;
+
+    color:#2F2B28;
+
+}
+
+.count-item small{
+
+    display:block;
+
+    margin-top:12px;
+
+    letter-spacing:2px;
+
+    font-size:14px;
+
+    text-transform:uppercase;
+
+    color:#8D857E;
+
+}
+
+.divider{
+
+    width:1px;
+
+    height:82px;
+
+    background:#DDD5CD;
+
+}
+
+/* =====================================
+   ANIMATION
+===================================== */
+
+@keyframes heroZoom{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+/* =====================================
+   TIMELINE
+===================================== */
+
+.timeline-section{
+
+    background:#F8F6F1;
+
+}
+
+.timeline-section h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:54px;
+
+    font-weight:500;
+
+    margin-bottom:60px;
+
+}
+
+.timeline{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+}
+
+.timeline-item{
+
+    display:grid;
+
+    grid-template-columns:120px 1fr 2fr;
+
+    align-items:center;
+
+    gap:25px;
+
+}
+
+.timeline-time{
+
+    font-size:32px;
+
+    font-weight:500;
+
+    color:#2F2B28;
+
+    text-align:right;
+
+}
+
+.timeline-line{
+
+    height:1px;
+
+    background:#D8CEC4;
+
+    width:100%;
+
+}
+
+.timeline-text{
+
+    font-size:22px;
+
+    color:#5B544D;
+
+}
+
+/* =====================================
+   DRESS CODE
+===================================== */
+
+.dress-section{
+
+    background:white;
+
+}
+
+.dress-section h2{
+
+    text-align:center;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:54px;
+
+    font-weight:500;
+
+    margin-bottom:40px;
+
+}
+
+.dress-text{
+
+    max-width:720px;
+
+    margin:0 auto;
+
+    text-align:center;
+
+    font-size:22px;
+
+    line-height:2;
+
+    color:#4D4742;
+
+}
+
+/* =====================================
+   RESTAURANT
+===================================== */
+
+.restaurant-section{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.restaurant-photo{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.restaurant-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.38);
+
+}
+
+.restaurant-card{
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(90%,460px);
+
+    padding:45px;
+
+    background:rgba(248,246,241,.93);
+
+    border-radius:24px;
+
+    text-align:center;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:
+
+        0 20px 60px rgba(0,0,0,.20);
+
+}
+
+.restaurant-card h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:46px;
+
+    font-weight:500;
+
+    margin-bottom:18px;
+
+}
+
+.restaurant-card p{
+
+    font-size:21px;
+
+    color:#4F4842;
+
+    margin-bottom:10px;
+
+}
+
+.map-button{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:35px;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    background:#FFFFFF;
+
+    color:#403A35;
+
+    font-size:17px;
+
+    transition:.35s;
+
+    box-shadow:
+
+        0 15px 35px rgba(0,0,0,.12);
+
+}
+
+.map-button:hover{
+
+    transform:translateY(-3px);
+
+    background:#F4EFE8;
+
+}
+
+/* =====================================
+   RSVP
+===================================== */
+
+.reply-section{
+
+    background:#F8F6F1;
+
+    text-align:center;
+
+}
+
+.reply-section h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:54px;
+
+    font-weight:500;
+
+    margin-bottom:28px;
+
+}
+
+.reply-section p{
+
+    font-size:24px;
+
+    line-height:2;
+
+    color:#4F4842;
+
+}
+
+.reply-section strong{
+
+    display:block;
+
+    margin-top:14px;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    color:#2F2B28;
+
+}
+/* =====================================
+   FINAL GALLERY
+===================================== */
+
+.gallery-section{
+
+    background:#FFFFFF;
+
+    padding:0;
+
+}
+
+.gallery-slider{
+
+    position:relative;
+
+    width:100%;
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
+
+.gallery-photo{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    opacity:0;
+
+    transition:opacity 1.5s ease;
+
+    transform:scale(1.05);
+
+}
+
+.gallery-photo.active{
+
+    opacity:1;
+
+    animation:galleryZoom 10s linear forwards;
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.72),
+        rgba(0,0,0,.18),
+        rgba(0,0,0,0)
+    );
+
+    z-index:2;
+
+}
+
+.gallery-text{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:70px;
+
+    transform:translateX(-50%);
+
+    width:min(90%,700px);
+
+    text-align:center;
+
+    color:#FFFFFF;
+
+    z-index:3;
+
+}
+
+.gallery-quote{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    line-height:1.4;
+
+    margin-bottom:28px;
+
+}
+
+.gallery-wait{
+
+    font-size:18px;
+
+    letter-spacing:1px;
+
+    margin-bottom:24px;
+
+    opacity:.95;
+
+}
+
+.gallery-text h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:52px;
+
+    font-weight:500;
+
+    letter-spacing:2px;
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer{
+
+    padding:35px 20px;
+
+    background:#F8F6F1;
+
+    text-align:center;
+
+}
+
+.footer p{
+
+    font-size:16px;
+
+    color:#8A8178;
+
+}
+
+/* =====================================
+   FADE ANIMATION
+===================================== */
+
+.fade-section{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s ease;
+
+}
+
+.fade-section.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* =====================================
+   GALLERY ANIMATION
+===================================== */
+
+@keyframes galleryZoom{
+
+    from{
+
+        transform:scale(1.05);
+
+    }
+
+    to{
+
+        transform:scale(1.12);
+
+    }
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width:768px){
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero-date{
+
+    font-size:20px;
+
+    letter-spacing:2px;
+
+}
+
+.hero-content{
+
+    padding:0 20px 60px;
+
+}
+
+.hero-button{
+
+    width:100%;
+
+    max-width:320px;
+
+}
+
+.invitation h2,
+.timeline-section h2,
+.dress-section h2,
+.reply-section h2{
+
+    font-size:42px;
+
+}
+
+.invitation-text,
+.dress-text{
+
+    font-size:19px;
+
+    line-height:1.8;
+
+}
+
+.date-title{
+
+    font-size:48px;
+
+}
+
+.time-title{
+
+    font-size:24px;
+
+}
+
+.countdown{
+
+    gap:10px;
+
+}
+
+.count-item{
+
+    min-width:70px;
+
+}
+
+.count-item span{
+
+    font-size:42px;
+
+}
+
+.count-item small{
+
+    font-size:11px;
+
+}
+
+.divider{
+
+    height:55px;
+
+}
+
+.timeline-item{
+
+    grid-template-columns:1fr;
+
+    gap:12px;
+
+    text-align:center;
+
+}
+
+.timeline-time{
+
+    text-align:center;
+
+    font-size:28px;
+
+}
+
+.timeline-line{
+
+    display:none;
+
+}
+
+.timeline-text{
+
+    font-size:20px;
+
+}
+
+.restaurant-card{
+
+    width:92%;
+
+    padding:35px 24px;
+
+}
+
+.restaurant-card h2{
+
+    font-size:36px;
+
+}
+
+.restaurant-card p{
+
+    font-size:18px;
+
+}
+
+.map-button{
+
+    width:100%;
+
+}
+
+.reply-section p{
+
+    font-size:20px;
+
+}
+
+.reply-section strong{
+
+    font-size:24px;
+
+}
+
+.gallery-text{
+
+    bottom:40px;
+
+}
+
+.gallery-quote{
+
+    font-size:30px;
+
+}
+
+.gallery-wait{
+
+    font-size:16px;
+
+}
+
+.gallery-text h2{
+
+    font-size:40px;
+
+}
+
+}
